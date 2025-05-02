@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-01T16:12:15 IST" name="Default suite" finished-at="2025-05-01T16:12:51 IST" duration-ms="35947">
+  <suite started-at="2025-05-02T12:42:47 IST" name="Default suite" finished-at="2025-05-02T12:42:59 IST" duration-ms="12638">
     <groups>
     </groups>
-    <test started-at="2025-05-01T16:12:15 IST" name="Default test" finished-at="2025-05-01T16:12:51 IST" duration-ms="35947">
-      <class name="com.cb_website.tests.HotelBookingTest">
-        <test-method is-config="true" signature="openTheBrowser()[pri:0, instance:com.cb_website.tests.HotelBookingTest@2af004b]" started-at="2025-05-01T16:12:10 IST" name="openTheBrowser" finished-at="2025-05-01T16:12:15 IST" duration-ms="5775" status="PASS">
+    <test started-at="2025-05-02T12:42:47 IST" name="Default test" finished-at="2025-05-02T12:42:59 IST" duration-ms="12638">
+      <class name="com.cb_website.tests.ProfileTest">
+        <test-method is-config="true" signature="openTheBrowser()[pri:0, instance:com.cb_website.tests.ProfileTest@2af004b]" started-at="2025-05-02T12:42:42 IST" name="openTheBrowser" finished-at="2025-05-02T12:42:47 IST" duration-ms="5271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openTheBrowser -->
-        <test-method signature="bookAHotelRoom()[pri:0, instance:com.cb_website.tests.HotelBookingTest@2af004b]" started-at="2025-05-01T16:12:15 IST" name="bookAHotelRoom" finished-at="2025-05-01T16:12:51 IST" duration-ms="35924" status="PASS">
+        <test-method signature="PerformTasksInProfilePage()[pri:0, instance:com.cb_website.tests.ProfileTest@2af004b]" started-at="2025-05-02T12:42:47 IST" name="PerformTasksInProfilePage" finished-at="2025-05-02T12:42:59 IST" duration-ms="12598" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookAHotelRoom -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.cb_website.tests.HotelBookingTest@2af004b]" started-at="2025-05-01T16:12:51 IST" name="closeTheBrowser" finished-at="2025-05-01T16:12:52 IST" duration-ms="266" status="PASS">
+        </test-method> <!-- PerformTasksInProfilePage -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.cb_website.tests.ProfileTest@2af004b]" started-at="2025-05-02T12:43:00 IST" name="closeTheBrowser" finished-at="2025-05-02T12:43:00 IST" duration-ms="365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-      </class> <!-- com.cb_website.tests.HotelBookingTest -->
+      </class> <!-- com.cb_website.tests.ProfileTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

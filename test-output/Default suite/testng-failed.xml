@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cb_website.tests.HotelBookingTest">
+      <class name="com.cb_website.tests.ProfileTest">
         <methods>
-          <include name="bookAHotelRoom"/>
+          <include name="PerformTasksInProfilePage"/>
           <include name="openTheBrowser"/>
           <include name="closeTheBrowser"/>
         </methods>
-      </class> <!-- com.cb_website.tests.HotelBookingTest -->
+      </class> <!-- com.cb_website.tests.ProfileTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

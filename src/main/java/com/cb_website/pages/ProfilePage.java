@@ -21,6 +21,10 @@ public class ProfilePage {
 	By changeBtn = By.xpath("//button[contains(text(),'Change')]");
 	By fname = By.name("first_name");
 	By lname = By.name("last_name");
+	By submitBtn = By.xpath("//button[contains(text(),'Submit')]");
+	By myBookings = By.xpath("//button[contains(text(),'My Bookings')]");
+	By bookingsHeader = By.xpath("//h3[contains(text(),'Bookings')]");
+	
 	
 	
 	public void clickOnProfilePic() {
@@ -38,6 +42,37 @@ public class ProfilePage {
 			System.out.println(account+ "Successfully navigates to the Profile page");
 		}
 	}
+	
+	public void changeFnameAndLname() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(changeBtn));
+		element.click();
+		WebElement element1 = wait.until(ExpectedConditions.visibilityOfElementLocated(fname));
+		element1.clear();
+		element1.sendKeys("Rahul");
+		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(lname));
+		element2.clear();
+		element2.sendKeys("Reddy");
+		WebElement element3 = wait.until(ExpectedConditions.visibilityOfElementLocated(submitBtn));
+		element3.click();
+	}
+	
+	public void clickOnMyBookings() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(myBookings));
+		element.click();
+	}
+	
+	public void verifyTheBookingsSection() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(bookingsHeader));
+		String bookings = element.getText();
+		Assert.assertEquals(bookings, "Bookings");
+		if (element.isDisplayed()) {
+			System.out.println("Succesfully navigated to Bookings section");
+		}
+	}
+	
 	
 	
 }
