@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cb_website.tests.ProfileTest">
+      <class name="com.cb_website.tests.HomeTest">
         <methods>
-          <include name="PerformTasksInProfilePage"/>
+          <include name="changeTheCurrency"/>
           <include name="openTheBrowser"/>
           <include name="closeTheBrowser"/>
         </methods>
-      </class> <!-- com.cb_website.tests.ProfileTest -->
+      </class> <!-- com.cb_website.tests.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

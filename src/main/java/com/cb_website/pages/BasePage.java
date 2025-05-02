@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 
 public class BasePage {
@@ -12,8 +13,8 @@ public class BasePage {
 	
 	@BeforeSuite
 	public void openTheBrowser() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\srini\\eclipse-workspace\\cb_website\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\srini\\eclipse-workspace\\cb_website\\drivers\\chromedriver.exe");
+		driver = new EdgeDriver();
 		driver.get("https://clickbooking.online/");
 		driver.manage().window().maximize();
 		System.out.println(driver.getTitle());
